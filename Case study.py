@@ -47,7 +47,7 @@ cursor.execute('''
     )
 ''')
 
-# Retrieve the column names of the Country5 table
+# Retrieve the column names of the table
 cursor.execute("SELECT * FROM Country5")
 columns = [column[0] for column in cursor.description]
 print(columns)
